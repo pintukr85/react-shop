@@ -10,6 +10,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 import Header from "./modules/front/Header";
 import ProductList from "./modules/front/product/ProductList";
+import Categories from "./modules/front/category/Categories";
 import Home from "./modules/front/Home";
 import About from "./modules/front/About";
 import Contact from "./modules/front/Contact";
@@ -20,8 +21,8 @@ function App() {
       <Header></Header>
       <Routes>
         <Route exact path='/' element={< ProductList />}></Route>
+        <Route exact path='/categories' element={< Categories />}></Route>
       </Routes>
-
     </Router>
   );
 }
